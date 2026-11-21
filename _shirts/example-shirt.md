@@ -1,5 +1,5 @@
 ---
-title: Example Shirt
+title: Placeholder
 price: 20
 order: 1
 made_by: TODO
