@@ -1,0 +1,30 @@
+title: Skill Issue Shirts
+tagline: Made by hand, by us.
+description: Small-batch shirts designed and made by our family.
+url: "https://example.com" # TODO: your domain
+baseurl: ""
+
+collections:
+  shirts:
+    output: true
+    permalink: /shirts/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: shirts
+    values:
+      layout: shirt
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - scripts/
+  - terraform/
+  - _to_delete/
+  - vendor/

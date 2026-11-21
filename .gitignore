@@ -1,0 +1,13 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+vendor/
+.bundle/
+Gemfile.lock
+_to_delete/
+
+# terraform
+terraform/.terraform/
+terraform/*.tfstate*
+terraform/terraform.tfvars
+terraform/plan*

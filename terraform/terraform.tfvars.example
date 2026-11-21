@@ -1,0 +1,4 @@
+domain          = "example.com"
+include_www     = true
+region          = "us-west-2"
+manage_dns      = true # false if DNS is not in Route 53

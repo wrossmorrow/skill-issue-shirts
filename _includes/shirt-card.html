@@ -1,0 +1,13 @@
+{% assign shirt = include.shirt %}
+{% assign available = shirt.sizes | where_exp: "s", "s.sold_out != true and s.link and s.link != ''" %}
+<a class="card" href="{{ shirt.url | relative_url }}">
+  <img src="{{ shirt.images[0] | relative_url }}" alt="{{ shirt.title }}" loading="lazy">
+  <div class="card-body">
+    <h3>{{ shirt.title }}</h3>
+    {% if available.size == 0 %}
+      <span class="badge">Sold out</span>
+    {% else %}
+      <span class="price">${{ shirt.price }}</span>
+    {% endif %}
+  </div>
+</a>

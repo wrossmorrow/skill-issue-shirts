@@ -1,0 +1,14 @@
+---
+title: Shirts
+---
+<section class="hero">
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+</section>
+
+{% assign shirts = site.shirts | where_exp: "s", "s.draft != true" | sort: "order" %}
+<section class="grid">
+  {% for shirt in shirts %}
+    {% include shirt-card.html shirt=shirt %}
+  {% endfor %}
+</section>

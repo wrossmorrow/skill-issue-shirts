@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<article class="shirt">
+  <div class="shirt-photos">
+    {% for img in page.images %}
+      <img src="{{ img | relative_url }}" alt="{{ page.title }}">
+    {% endfor %}
+  </div>
+
+  <div class="shirt-info">
+    <h1>{{ page.title }}</h1>
+    {% if page.made_by %}<p class="made-by">Designed by {{ page.made_by }}</p>{% endif %}
+    <p class="price">${{ page.price }}</p>
+
+    <div class="description">{{ content }}</div>
+
+    <h2>Pick a size</h2>
+    <div class="sizes">
+      {% for s in page.sizes %}
+        {% if s.sold_out or s.link == nil or s.link == "" %}
+          <span class="size sold-out" title="Sold out">{{ s.size }}</span>
+        {% else %}
+          <a class="size" href="{{ s.link }}">{{ s.size }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <p class="note">Checkout happens on a secure payment page. We ship within a week or so.</p>
+  </div>
+</article>
