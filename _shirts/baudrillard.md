@@ -1,5 +1,5 @@
 ---
-title: Baudrilliard
+title: Baudrillard
 price: 50
 order: 1
 made_by: TODO
