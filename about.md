@@ -6,7 +6,7 @@ permalink: /about/
 
 # About us
 
-We're a family that makes shirts. Every design starts as a drawing at the kitchen table. <!-- TODO: the kids write this part -->
+We feel like lots of modern clothing pretty mid. We're bad at it, but at least it's ours.
 
 Questions about an order? Email us at <!-- TODO: shop email -->.
 
